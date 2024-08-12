@@ -2,9 +2,12 @@ This project simulates the classic Hangman game, where the player tries to guess
 The hidden words in this simulation are randomly selected from a list of nouns stored in an external file, englishnouns.txt. 
 The computer selects a random word from a text file containing the top 1000 most common words in the English language, and the user subsequently must attempt to guess the word, letter by letter. 
 If the user guesses incorrectly, the hangman gets closer to death. 
-The user therefore must try and guess the correct word before the hangman is fully dead, at which point they lose the game. If they guess the word correctly, then they win. 
-#**Syntax**
-##Variables
+The user therefore must try and guess the correct word before the hangman is fully dead, at which point they lose the game. If they guess the word correctly, then they win.
+
+**Syntax**
+
+Variables
+
 *computer_word* is the randomly selected word from the txt file. 
 *blank_word* is the correctly guessed letters in computer_word. This starts off ‘blank’ and is represented by underscores to start with.
 *user_letter* is the letter guessed by the user on that specific turn. This changes each time as the user guesses a new letter, which is then stored in this variable.
@@ -12,7 +15,9 @@ The user therefore must try and guess the correct word before the hangman is ful
 *guess_letters* is a list which stores all of the unique letters that the user has guessed so far. If the user guesses a repeat letter, or a word, this will not be stored in this variable.
 *user_choice* is the variable used at the end of the game to determine if the user would like to play again, or exit the game.
 
-##Functions
+
+Functions
+
 *random_word()* is the function that consults the txt file and assigns a random word to the variable computer_word. It then creates the blank_word variable based on the length of the chosen random word.
 *edit_blank()* is the function that inserts the correctly guessed letter in the correct index in the blank word, so that it matches the index of that letter in the computer word.
 *hangman_graphic()* takes the guess_count as an input and uses this to determine which hangman graphic should be printed to the console.
