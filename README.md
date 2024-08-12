@@ -4,9 +4,8 @@ The computer selects a random word from a text file containing the top 1000 most
 If the user guesses incorrectly, the hangman gets closer to death. 
 The user therefore must try and guess the correct word before the hangman is fully dead, at which point they lose the game. If they guess the word correctly, then they win.
 
-**Syntax**
 
-Variables
+**Variables**
 
 *computer_word* is the randomly selected word from the txt file. 
 *blank_word* is the correctly guessed letters in computer_word. This starts off ‘blank’ and is represented by underscores to start with.
@@ -16,7 +15,7 @@ Variables
 *user_choice* is the variable used at the end of the game to determine if the user would like to play again, or exit the game.
 
 
-Functions
+**Functions**
 
 *random_word()* is the function that consults the txt file and assigns a random word to the variable computer_word. It then creates the blank_word variable based on the length of the chosen random word.
 *edit_blank()* is the function that inserts the correctly guessed letter in the correct index in the blank word, so that it matches the index of that letter in the computer word.
